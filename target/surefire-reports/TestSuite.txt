@@ -1,16 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 8.816 sec <<< FAILURE!
-UserCanSearchForProduct(tests.SearchProductTest)  Time elapsed: 0.079 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 6.668 sec <<< FAILURE!
+UserCanSearchForProduct(tests.SearchProductTest)  Time elapsed: 0.062 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=75.0.3770.90)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'omnia-fixedsolutions', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.90, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: /tmp/.com.google.Chrome.QQput4}, goog:chromeOptions: {debuggerAddress: localhost:46753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1e7d4795885c8c6dac19eff187357873
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.90, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: /tmp/.com.google.Chrome.FkEdYP}, goog:chromeOptions: {debuggerAddress: localhost:41389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0441f58cdc339ff3b14fa32d0d8fbf2a
 *** Element info: {Using=id, value=small-searchterms}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -33,15 +32,14 @@ Session ID: 1e7d4795885c8c6dac19eff187357873
 	at Pages.SearchPage.ProductSearch(SearchPage.java:26)
 	at tests.SearchProductTest.UserCanSearchForProduct(SearchProductTest.java:21)
 
-screenshoOnFailure(tests.SearchProductTest)  Time elapsed: 0.147 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+screenshotOnFailure(tests.SearchProductTest)  Time elapsed: 0.082 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=75.0.3770.90)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'omnia-fixedsolutions', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.90, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: /tmp/.com.google.Chrome.QQput4}, goog:chromeOptions: {debuggerAddress: localhost:46753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1e7d4795885c8c6dac19eff187357873
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.90, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: /tmp/.com.google.Chrome.FkEdYP}, goog:chromeOptions: {debuggerAddress: localhost:41389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0441f58cdc339ff3b14fa32d0d8fbf2a
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -55,7 +53,7 @@ Session ID: 1e7d4795885c8c6dac19eff187357873
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 	at utilities.Helper.captureScreenshot(Helper.java:23)
-	at tests.TestBase.screenshoOnFailure(TestBase.java:53)
+	at tests.TestBase.screenshotOnFailure(TestBase.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

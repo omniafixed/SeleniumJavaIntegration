@@ -6,9 +6,9 @@
       <class name="tests.SearchProductTest">
         <methods>
           <include name="startDriver"/>
-          <include name="screenshoOnFailure"/>
           <include name="UserCanSearchForProduct"/>
           <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
         </methods>
       </class> <!-- tests.SearchProductTest -->
     </classes>
