@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="8" total="10" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="11420" started-at="2019-06-15T18:55:20Z" finished-at="2019-06-15T18:55:31Z">
+  <suite name="Command line suite" duration-ms="6187" started-at="2019-06-15T19:59:30Z" finished-at="2019-06-15T19:59:36Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="11420" started-at="2019-06-15T18:55:20Z" finished-at="2019-06-15T18:55:31Z">
+    <test name="Command line test" duration-ms="6187" started-at="2019-06-15T19:59:30Z" finished-at="2019-06-15T19:59:36Z">
       <class name="tests.TestBase">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestBase@17f6480]" name="startDriver" is-config="true" duration-ms="11945" started-at="2019-06-15T20:55:08Z" finished-at="2019-06-15T20:55:20Z">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestBase@17f6480]" name="startDriver" is-config="true" duration-ms="6344" started-at="2019-06-15T21:59:24Z" finished-at="2019-06-15T21:59:30Z">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.TestBase@17f6480]" name="stopDriver" is-config="true" duration-ms="133" started-at="2019-06-15T20:55:31Z" finished-at="2019-06-15T20:55:31Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.TestBase@17f6480]" name="stopDriver" is-config="true" duration-ms="73" started-at="2019-06-15T21:59:36Z" finished-at="2019-06-15T21:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
       </class> <!-- tests.TestBase -->
       <class name="tests.SearchProductTest">
-        <test-method status="PASS" signature="UserCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@506e6d5e]" name="UserCanSearchForProduct" duration-ms="7750" started-at="2019-06-15T20:55:23Z" finished-at="2019-06-15T20:55:31Z">
+        <test-method status="PASS" signature="UserCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@506e6d5e]" name="UserCanSearchForProduct" duration-ms="3201" started-at="2019-06-15T21:59:33Z" finished-at="2019-06-15T21:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanSearchForProduct -->
-        <test-method status="PASS" signature="screenshoOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@506e6d5e]" name="screenshoOnFailure" is-config="true" duration-ms="0" started-at="2019-06-15T20:55:31Z" finished-at="2019-06-15T20:55:31Z">
+        <test-method status="PASS" signature="screenshoOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@506e6d5e]" name="screenshoOnFailure" is-config="true" duration-ms="0" started-at="2019-06-15T21:59:36Z" finished-at="2019-06-15T21:59:36Z">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
         </test-method> <!-- screenshoOnFailure -->
       </class> <!-- tests.SearchProductTest -->
       <class name="tests.ContactUsTest">
-        <test-method status="PASS" signature="openContactUsPage()[pri:0, instance:tests.ContactUsTest@67b64c45]" name="openContactUsPage" duration-ms="3647" started-at="2019-06-15T20:55:20Z" finished-at="2019-06-15T20:55:23Z">
+        <test-method status="PASS" signature="openContactUsPage()[pri:0, instance:tests.ContactUsTest@67b64c45]" name="openContactUsPage" duration-ms="2961" started-at="2019-06-15T21:59:30Z" finished-at="2019-06-15T21:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openContactUsPage -->
-        <test-method status="PASS" signature="screenshoOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@67b64c45]" name="screenshoOnFailure" is-config="true" duration-ms="1" started-at="2019-06-15T20:55:23Z" finished-at="2019-06-15T20:55:23Z">
+        <test-method status="PASS" signature="screenshoOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@67b64c45]" name="screenshoOnFailure" is-config="true" duration-ms="1" started-at="2019-06-15T21:59:33Z" finished-at="2019-06-15T21:59:33Z">
           <params>
             <param index="0">
               <value>
