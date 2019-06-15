@@ -23,8 +23,6 @@ import utilities.Helper;
 public class TestBase 
 {
 	public static WebDriver driver ; 
-	
-	public static String downloadPath = System.getProperty("user.dir") + "\\Downloads";
 
 	public static FirefoxOptions firefoxOption() {
 		FirefoxOptions option = new FirefoxOptions();
