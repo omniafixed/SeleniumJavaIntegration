@@ -1,26 +1,28 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Pages.ContactUsPage;
-import Pages.HomePage;
+import pages.ContactUsPage;
+import pages.HomePage;
 
-public class ContactUsTest extends TestBase{
+public class ContactUsTest extends TestBase
+{
+	HomePage home;
+	ContactUsPage contactPage;
 
-	ContactUsPage contactUsObject;
-	HomePage homePageObject;
-	String fullName = "Omnia Tarek";
-	String email = "omniatarek@test.com";
-	String enquiry = "test test test";
-
-
+	String email = "test@test.com";
+	String fullName = "Test User";
+	String enquiry = "Hello Admin , this is for test";
 
 	@Test
-	public void openContactUsPage() {
-		contactUsObject = new ContactUsPage(driver);
-		homePageObject = new HomePage(driver);
-		homePageObject.openContactUsPage();
-		contactUsObject.contactUsFormpage(fullName, email, enquiry);
-
+	public void UserCanUseContactUs() {
+		home = new HomePage(driver);
+		home.openContactUsPage();
+		contactPage = new ContactUsPage(driver);
+		contactPage.ContactUs(fullName, email, enquiry);
+		 Assert.assertTrue(contactPage.successMessage.getText()
+				 .contains("Your enquiry has been successfully sent to the store owner."));
 	}
+
 }
