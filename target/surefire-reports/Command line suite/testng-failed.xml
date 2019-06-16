@@ -3,14 +3,6 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="tests.ContactUsTest">
-        <methods>
-          <include name="openContactUsPage"/>
-          <include name="startDriver"/>
-          <include name="stopDriver"/>
-          <include name="screenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.ContactUsTest -->
       <class name="tests.SearchProductTest">
         <methods>
           <include name="startDriver"/>

@@ -24,31 +24,12 @@ public class TestBase
 {
 	public static WebDriver driver ; 
 
-	public static FirefoxOptions firefoxOption() {
-		FirefoxOptions option = new FirefoxOptions();
-	
-		return option;
-	}
-
-	public static ChromeOptions chromeOption() {
-		ChromeOptions options = new ChromeOptions();
-		
-		return options;
-	}
-
 	@BeforeSuite
 	@Parameters({"browser"})
 	public void startDriver(@Optional("chrome") String browserName) 
 	{
-		if (browserName.equalsIgnoreCase("chrome")) {
 
-			driver = new ChromeDriver(chromeOption()); 
-		}
-
-		else if(browserName.equalsIgnoreCase("firefox")) {
-
-			driver = new FirefoxDriver(firefoxOption()); 
-		}
+			driver = new ChromeDriver(); 
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
