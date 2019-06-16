@@ -1,16 +1,9 @@
 package tests;
 
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -28,8 +21,11 @@ public class TestBase
 	@Parameters({"browser"})
 	public void startDriver(@Optional("chrome") String browserName) 
 	{
+		if (browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver","/user/bin/chromedriver");
+			driver = new ChromeDriver();
+		}
 
-			driver = new ChromeDriver(); 
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
@@ -54,3 +50,4 @@ public class TestBase
 		}
 	}
 }
+
