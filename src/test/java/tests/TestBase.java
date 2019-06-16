@@ -22,7 +22,7 @@ public class TestBase
 	public void startDriver(@Optional("chrome") String browserName) 
 	{
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
